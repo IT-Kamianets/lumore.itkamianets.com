@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Instagram, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';

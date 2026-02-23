@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Coffee, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { CAFE_INFO } from '../data/content';
-
 import FeaturedMenu from '../components/FeaturedMenu';
 import HomeContact from '../components/HomeContact';
 
@@ -103,3 +102,4 @@ const Home = () => {
 };
 
 export default Home;
+
