@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coffee: #3C2A21;
+  --color-beige: #F5F5DC;
+  --color-terracotta: #E2725B;
+  --color-gold: #D4AF37;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+:root {
+  background-color: var(--color-beige);
+  color: var(--color-coffee);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.sticky-nav {
+  @apply sticky top-0 z-50 bg-beige/80 backdrop-blur-md border-b border-coffee/10;
+}
