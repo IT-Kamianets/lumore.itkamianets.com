@@ -3,16 +3,18 @@ import { motion } from 'framer-motion';
 
 interface MenuCardProps {
   item: MenuItem;
+  onClick?: (item: MenuItem) => void;
 }
 
-const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
+const MenuCard: React.FC<MenuCardProps> = ({ item, onClick }) => {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="bg-white/40 backdrop-blur-sm border border-coffee/5 p-4 rounded-3xl group hover:shadow-lg transition-all"
+      onClick={() => onClick?.(item)}
+      className="bg-white/40 backdrop-blur-sm border border-coffee/5 p-4 rounded-3xl group hover:shadow-lg transition-all cursor-pointer"
     >
       <div className="relative aspect-square overflow-hidden rounded-2xl mb-4">
         <img 
