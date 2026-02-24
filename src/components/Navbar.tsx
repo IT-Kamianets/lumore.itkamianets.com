@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MapPin } from 'lucide-react';
 import { CAFE_INFO } from '../data/content';
@@ -11,16 +11,7 @@ function cn(...inputs: ClassValue[]) {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { label: 'Меню', path: '/' },
@@ -28,7 +19,6 @@ const Navbar = () => {
     { label: 'Контакти', path: '/contacts' },
   ];
 
-  const isHomePage = location.pathname === '/';
   const isTransparent = false; // Always false now that Menu is the home page
   const textColor = isTransparent ? 'text-beige' : 'text-coffee';
 
