@@ -24,17 +24,17 @@ export const MENU_ITEMS: MenuItem[] = [
   // COFFEE
   { id: "dr-coffee-1", name: "Рістрето", description: "Класичний міцний напій", price: 35, volume: "15 мл", category: "coffee", image: "/ristretto.png" },
   { id: "dr-coffee-2", name: "Еспресо", description: "Класична кава", price: 35, volume: "30 мл", category: "coffee", image: "/espresso.png" },
-  { id: "dr-coffee-3", name: "Еспресо макіято", description: "Еспресо з краплею молочної піни", price: 40, volume: "50 мл", category: "coffee", image: "/espresso_macchiato.png" },
-  { id: "dr-coffee-4", name: "Допіо", description: "Подвійне еспресо", price: 65, volume: "120 мл", category: "coffee", image: "/doppio.png" },
+  { id: "dr-coffee-3", name: "Еспресо макіято", description: "Еспресо з краплею молочної піни", price: 40, volume: "50 мл", category: "coffee", image: "/espresso-machiato.png" },
+  { id: "dr-coffee-4", name: "Допіо", description: "Подвійне еспресо", price: 65, volume: "120 мл", category: "coffee", image: "/dopio.png" },
   { id: "dr-coffee-5", name: "Американо", description: "Класична кава з додаванням води", price: 35, volume: "120 мл", category: "coffee", image: "/americano.png" },
 
   // CAPPUCCINO
   { id: "dr-cappuccino-1", name: "Капучино класичне", description: "Класичне поєднання еспресо, молока та піни", price: 45, volume: "220 мл", category: "cappuccino", image: "/capuchino.png" },
-  { id: "dr-cappuccino-2", name: "Капучино велике", description: "Для тих, хто любить більше кави", price: 50, volume: "320 мл", category: "cappuccino" },
-  { id: "dr-cappuccino-3", name: "Капучино солоне", description: "Капучино з додаванням солі для особливого смаку", price: 50, volume: "220 мл", category: "cappuccino" },
-  { id: "dr-cappuccino-4", name: "Флет уайт", description: "Насичений молочний напій", price: 80, volume: "230 мл", category: "cappuccino" },
-  { id: "dr-cappuccino-5", name: "Апельсинове", description: "Капучино з апельсиновим смаком", price: 55, volume: "220 мл", category: "cappuccino" },
-  { id: "dr-cappuccino-6", name: "Апельсинове XL", description: "Більша порція апельсинової кави", price: 65, volume: "220 мл", category: "cappuccino" },
+  { id: "dr-cappuccino-2", name: "Капучино велике", description: "Для тих, хто любить більше кави", price: 50, volume: "320 мл", category: "cappuccino", image: "/capuchino-big.png" },
+  { id: "dr-cappuccino-3", name: "Капучино солоне", description: "Капучино з додаванням солі для особливого смаку", price: 50, volume: "220 мл", category: "cappuccino", image: "/capuchino-solone.png" },
+  { id: "dr-cappuccino-4", name: "Флет уайт", description: "Насичений молочний напій", price: 80, volume: "230 мл", category: "cappuccino", image: "/flat-white.png" },
+  { id: "dr-cappuccino-5", name: "Апельсинове", description: "Капучино з апельсиновим смаком", price: 55, volume: "220 мл", category: "cappuccino", image: "/capuchino-orange.png" },
+  { id: "dr-cappuccino-6", name: "Апельсинове XL", description: "Більша порція апельсинової кави", price: 65, volume: "220 мл", category: "cappuccino", image: "/capuchino-orange-xl.png" },
 
   // COFFEE WITH MILK
   { id: "dr-cm-1", name: "Лате", description: "Ніжна кава з великою кількістю молока", price: 50, volume: "320 мл", category: "coffee_with_milk" },
@@ -45,19 +45,19 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: "dr-cm-6", name: "По-віденськи", description: "Кава з вершками", price: 70, volume: "220 мл", category: "coffee_with_milk" },
 
   // CHOCOLATE AND COCOA
-  { id: "dr-choc-1", name: "Гарячий чорний шоколад", description: "Dark chocolate", price: 85, volume: "100 мл", category: "chocolate_and_cocoa" },
-  { id: "dr-choc-2", name: "Гарячий молочний шоколад", description: "Milk chocolate", price: 75, volume: "150 мл", category: "chocolate_and_cocoa" },
-  { id: "dr-choc-3", name: "Какао", description: "Cocoa", price: 60, volume: "320 мл", category: "chocolate_and_cocoa" },
-
+  { id: "dr-choc-1", name: "Гарячий чорний шоколад", description: "Dark chocolate", price: 85, volume: "100 мл", category: "chocolate_and_cocoa", image: "/hot-chocolate.png" },
+  { id: "dr-choc-2", name: "Гарячий молочний шоколад", description: "Milk chocolate", price: 75, volume: "150 мл", category: "chocolate_and_cocoa", image: "/hot-chocolate-milk.png" },
+  { id: "dr-choc-3", name: "Какао", description: "Cocoa", price: 60, volume: "320 мл", category: "chocolate_and_cocoa", image: "/cocoa.png" },
+  
   // NON-ALCOHOLIC MULLED WINE
   { id: "dr-wine-1", name: "Глінтвейн б/а виноград", description: "Grape", price: 70, volume: "300 мл", category: "non_alcoholic_mulled_wine" },
   { id: "dr-wine-2", name: "Глінтвейн б/а смородина", description: "Currant", price: 70, volume: "300 мл", category: "non_alcoholic_mulled_wine" },
   { id: "dr-wine-3", name: "Глінтвейн б/а журавлина", description: "Cranberry", price: 70, volume: "300 мл", category: "non_alcoholic_mulled_wine" },
 
   // FRESH
-  { id: "dr-fresh-1", name: "Фреш апельсин", description: "Orange", price: 80, volume: "220 мл", category: "fresh" },
-  { id: "dr-fresh-2", name: "Фреш гранат", description: "Garnet", price: 150, volume: "220 мл", category: "fresh" },
-  { id: "dr-fresh-3", name: "Фреш грейпфрут", description: "Grapefruit", price: 80, volume: "220 мл", category: "fresh" },
+  { id: "dr-fresh-1", name: "Фреш апельсин", description: "Orange", price: 80, volume: "220 мл", category: "fresh", image: "/orange-fresh.png" },
+  { id: "dr-fresh-2", name: "Фреш гранат", description: "Garnet", price: 150, volume: "220 мл", category: "fresh", image: "/fresh-pomegranate.png" },
+  { id: "dr-fresh-3", name: "Фреш грейпфрут", description: "Grapefruit", price: 80, volume: "220 мл", category: "fresh", image: "/fresh-grapefruit.png" },
 
   // FRUIT TEA
   { id: "dr-ftea-1", name: "Імбирний", description: "Ginger", price: 55, volume: "420 мл", category: "fruit_tea" },
