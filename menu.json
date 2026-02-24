@@ -1,8 +1,6 @@
-
-{
+﻿{
   "pasta_and_ravioli": [
     {
-      "id": 1,
       "name": "Равіолі з вершковим сиром та шпинатом",
       "ingredients": [
         "шпинат",
@@ -14,10 +12,10 @@
         "базилік"
       ],
       "price_uah": 150,
-      "weight_g": 380
+      "weight_g": 380,
+      "slug": "ravioli-z-vershkovym-syrom-ta-shpynatom"
     },
     {
-      "id": 2,
       "name": "Равіолі з лососем",
       "ingredients": [
         "вершковий сир",
@@ -27,11 +25,11 @@
         "базилік"
       ],
       "price_uah": 195,
-      "weight_g": 350
+      "weight_g": 350,
+      "slug": "ravioli-z-lososem"
     },
     {
-      "id": 3,
-      "name": "Равіолі з індичкою та в'яленою грушею",
+      "name": "Равіолі з індичкою та в\u0027яленою грушею",
       "ingredients": [
         "індичка",
         "морква",
@@ -39,20 +37,20 @@
         "цибуля",
         "вершки",
         "пармезан",
-        "в'ялена груша"
+        "в\u0027ялена груша"
       ],
       "price_uah": 165,
-      "weight_g": 380
+      "weight_g": 380,
+      "slug": "ravioli-z-indychkoyu-ta-vyalenoyu-hrusheyu"
     },
     {
-      "id": 4,
       "name": "Паста карбонара",
       "ingredients": ["бекон", "вершки", "жовток", "пармезан", "чорний перець"],
       "price_uah": 175,
-      "weight_g": 350
+      "weight_g": 350,
+      "slug": "pasta-karbonara"
     },
     {
-      "id": 5,
       "name": "Паста з куркою",
       "ingredients": [
         "куряче філе",
@@ -63,10 +61,10 @@
         "оливкова олія"
       ],
       "price_uah": 165,
-      "weight_g": 430
+      "weight_g": 430,
+      "slug": "pasta-z-kurkoyu"
     },
     {
-      "id": 6,
       "name": "Паста з морепродуктами",
       "ingredients": [
         "кальмари",
@@ -78,28 +76,28 @@
         "оливкова олія"
       ],
       "price_uah": 240,
-      "weight_g": 400
+      "weight_g": 400,
+      "slug": "pasta-z-moreproduktamy"
     }
   ],
   "soups": [
     {
-      "id": 7,
       "name": "Сирний крем-суп",
       "ingredients": ["пармезан", "чедер", "вершки", "цибуля", "морква"],
       "price_uah": 100,
-      "weight_g": 280
+      "weight_g": 280,
+      "slug": "syrnyy-krem-sup"
     },
     {
-      "id": 8,
       "name": "Гарбузовий крем-суп",
       "ingredients": ["гарбуз", "вершки", "картопля", "сир фета"],
       "price_uah": 85,
-      "weight_g": 280
+      "weight_g": 280,
+      "slug": "harbuzovyy-krem-sup"
     }
   ],
   "bowls": [
     {
-      "id": 9,
       "name": "Боул з куркою",
       "ingredients": [
         "кіноа",
@@ -111,10 +109,10 @@
         "оливкова олія"
       ],
       "price_uah": 160,
-      "weight_g": 320
+      "weight_g": 320,
+      "slug": "boul-z-kurkoyu"
     },
     {
-      "id": 10,
       "name": "Боул з лососем",
       "ingredients": [
         "кіноа",
@@ -125,10 +123,10 @@
         "сік лимона"
       ],
       "price_uah": 185,
-      "weight_g": 300
+      "weight_g": 300,
+      "slug": "boul-z-lososem"
     },
     {
-      "id": 11,
       "name": "Боул з тунцем",
       "ingredients": [
         "кус-кус",
@@ -140,12 +138,12 @@
         "оливкова олія"
       ],
       "price_uah": 200,
-      "weight_g": 400
+      "weight_g": 400,
+      "slug": "boul-z-tuntsem"
     }
   ],
   "salads": [
     {
-      "id": 12,
       "name": "Грецький салат",
       "ingredients": [
         "томат",
@@ -156,10 +154,10 @@
         "базилік"
       ],
       "price_uah": 125,
-      "weight_g": 250
+      "weight_g": 250,
+      "slug": "hretskyy-salat"
     },
     {
-      "id": 13,
       "name": "Салат лайт",
       "ingredients": [
         "лист салату",
@@ -170,46 +168,89 @@
         "оливкова олія"
       ],
       "price_uah": 100,
-      "weight_g": 250
+      "weight_g": 250,
+      "slug": "salat-layt"
     },
     {
-      "id": 14,
       "name": "Цезар з куркою",
       "ingredients": ["салат", "куряче філе", "яйце", "пармезан", "соус цезар"],
       "price_uah": 165,
-      "weight_g": 350
+      "weight_g": 350,
+      "slug": "tsezar-z-kurkoyu"
     }
   ],
   "breakfasts": [
     {
-      "id": 15,
       "name": "Яєчня",
       "ingredients": ["яйця", "огірки", "помідори", "сир"],
       "price_uah": 80,
-      "weight_g": 210
+      "weight_g": 210,
+      "slug": "yayechnya"
     },
     {
-      "id": 16,
       "name": "Сніданок англійський",
       "ingredients": ["яйця", "сосиски", "квасоля", "шпинат", "тости", "томат"],
       "price_uah": 125,
-      "weight_g": 380
+      "weight_g": 380,
+      "slug": "snidanok-anhliyskyy"
     },
     {
-      "id": 17,
       "name": "Скрембл з куркою",
       "ingredients": ["яйця", "куряче філе", "шпинат", "томат", "тост"],
       "price_uah": 135,
-      "weight_g": 300
+      "weight_g": 300,
+      "slug": "skrembl-z-kurkoyu"
+    },
+    {
+      "name": "Картопля з ковбасками",
+      "ingredients": [
+        "картопля",
+        "ковбаски",
+        "пармезан",
+        "соус",
+        "мариновані огірки"
+      ],
+      "price_uah": 130,
+      "weight_g": 350,
+      "slug": "kartoplya-z-kovbaskamy"
+    },
+    {
+      "name": "Картопля 4 сира",
+      "ingredients": [
+        "картопля",
+        "перець",
+        "сир дорблю",
+        "крем-сир",
+        "пармезан",
+        "гауда"
+      ],
+      "price_uah": 130,
+      "weight_g": 380,
+      "slug": "kartoplya-4-syra"
+    },
+    {
+      "name": "Пашот з лососем",
+      "ingredients": [
+        "тостовий хліб",
+        "яйце пашот",
+        "лосось",
+        "сир фета",
+        "огірок",
+        "шпинат",
+        "соус цезар"
+      ],
+      "price_uah": 165,
+      "weight_g": 430,
+      "slug": "pashot-z-lososem"
     }
   ],
   "desserts": [
     {
-      "id": 18,
       "name": "Сирники",
       "ingredients": ["сирники", "сметана/нутелла/фісташка/джем"],
       "price_uah": 120,
-      "weight_g": 180
+      "weight_g": 180,
+      "slug": "syrnyky"
     }
   ]
 }
