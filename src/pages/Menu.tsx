@@ -9,7 +9,7 @@ const categories = [
   { id: 'all', label: 'Усе', subcategories: [] },
   { id: 'coffee', label: 'Кава', subcategories: ['coffee', 'cappuccino', 'coffee_with_milk'] },
   { id: 'drinks', label: 'Напої', subcategories: ['chocolate_and_cocoa', 'non_alcoholic_mulled_wine', 'fresh', 'fruit_tea', 'tea'] },
-  { id: 'kitchen', label: 'Кухня', subcategories: ['pasta_and_ravioli', 'soups', 'bowls', 'salads'] },
+  { id: 'kitchen', label: 'Кухня', subcategories: ['pasta_and_ravioli', 'soups', 'bowls', 'salads', 'potato'] },
   { id: 'breakfasts', label: 'Сніданки', subcategories: ['breakfasts'] },
   { id: 'desserts', label: 'Десерти', subcategories: ['desserts'] },
   { id: 'adds', label: 'Добавки', subcategories: ['adds'] },
@@ -28,6 +28,7 @@ const subcategoryLabels: Record<string, string> = {
   soups: 'Супи',
   bowls: 'Боули',
   salads: 'Салати',
+  potato: 'Картопля',
   breakfasts: 'Сніданки',
   desserts: 'Десерти',
   adds: 'Добавки до напоїв'
