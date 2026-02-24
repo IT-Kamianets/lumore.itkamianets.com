@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Layout from './components/Layout';
 import Menu from './pages/Menu';
 import About from './pages/About';
+import Gallery from './pages/Gallery';
 import Contacts from './pages/Contacts';
 import ScrollToTopButton from './components/ScrollToTopButton'; // Import the new component
 import { useEffect } from 'react';
@@ -23,6 +24,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Menu />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </Layout>

@@ -26,8 +26,8 @@ const Footer = () => {
         <div className="space-y-4">
           <h4 className="text-sm font-bold uppercase tracking-widest text-terracotta">Навігація</h4>
           <ul className="space-y-2 text-sm text-beige/80">
-            <li><Link to="/" className="hover:text-beige transition-colors">Головна</Link></li>
-            <li><Link to="/menu" className="hover:text-beige transition-colors">Меню</Link></li>
+            <li><Link to="/" className="hover:text-beige transition-colors">Меню</Link></li>
+            <li><Link to="/gallery" className="hover:text-beige transition-colors">Галерея</Link></li>
             <li><Link to="/about" className="hover:text-beige transition-colors">Про нас</Link></li>
             <li><Link to="/contacts" className="hover:text-beige transition-colors">Контакти</Link></li>
           </ul>

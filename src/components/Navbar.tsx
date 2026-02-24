@@ -15,6 +15,7 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'Меню', path: '/' },
+    { label: 'Галерея', path: '/gallery' },
     { label: 'Про нас', path: '/about' },
     { label: 'Контакти', path: '/contacts' },
   ];
