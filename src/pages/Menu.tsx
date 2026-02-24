@@ -35,7 +35,10 @@ const subcategoryLabels: Record<string, string> = {
 };
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState(() => {
+    const hour = new Date().getHours();
+    return hour < 12 ? 'breakfasts' : 'all';
+  });
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
 
@@ -147,7 +150,7 @@ const Menu = () => {
           {/* Main Content */}
           <main className="flex-1 w-full">
             {/* Search Bar */}
-            <div className="sticky top-24 lg:top-32 z-30 mb-12">
+            <div className="mb-12">
               <div className="relative group">
                 <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-coffee/40 group-focus-within:text-terracotta transition-colors" size={22} />
                 <input
@@ -170,11 +173,10 @@ const Menu = () => {
 
             {/* Menu Sections */}
             <div className="space-y-16">
-              <AnimatePresence mode="popLayout">
+              <AnimatePresence mode="wait">
                 {activeSubcategories.map((sub) => (
                   <motion.section 
                     key={sub}
-                    layout
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95 }}

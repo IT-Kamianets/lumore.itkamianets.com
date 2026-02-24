@@ -23,14 +23,13 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Головна', path: '/' },
-    { label: 'Меню', path: '/menu' },
+    { label: 'Меню', path: '/' },
     { label: 'Про нас', path: '/about' },
     { label: 'Контакти', path: '/contacts' },
   ];
 
   const isHomePage = location.pathname === '/';
-  const isTransparent = isHomePage && !scrolled;
+  const isTransparent = false; // Always false now that Menu is the home page
   const textColor = isTransparent ? 'text-beige' : 'text-coffee';
 
   return (
