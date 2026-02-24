@@ -60,14 +60,11 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: "dr-fresh-3", name: "Фреш грейпфрут", description: "Grapefruit", price: 80, volume: "220 мл", category: "fresh", image: "/fresh-grapefruit.png" },
 
   // FRUIT TEA
-  { id: "dr-ftea-1", name: "Імбирний", description: "Ginger", price: 55, volume: "420 мл", category: "fruit_tea" },
-  { id: "dr-ftea-2", name: "Малиновий", description: "Raspberry", price: 55, volume: "420 мл", category: "fruit_tea" },
-  { id: "dr-ftea-3", name: "Чорна смородина", description: "Blackberry/Currant", price: 55, volume: "420 мл", category: "fruit_tea" },
-  { id: "dr-ftea-4", name: "Обліпиховий", description: "Sea buckthorn", price: 55, volume: "420 мл", category: "fruit_tea" },
-  { id: "dr-ftea-5", name: "Журавлинний", description: "Cranberry", price: 55, volume: "420 мл", category: "fruit_tea" },
-
-  // TEA
-  { id: "dr-tea-1", name: "Чай в кружці", description: "Tea in a mug", price: 30, volume: "240 мл", category: "tea" },
+  { id: "dr-ftea-1", name: "Імбирний", description: "Ginger", price: 55, volume: "420 мл", category: "fruit_tea", image: "/fruit-tea-ginger.png" },
+  { id: "dr-ftea-2", name: "Малиновий", description: "Raspberry", price: 55, volume: "420 мл", category: "fruit_tea", image: "/fruit-tea-raspberry.png" },
+  { id: "dr-ftea-3", name: "Чорна смородина", description: "Blackberry/Currant", price: 55, volume: "420 мл", category: "fruit_tea", image: "/fruit-tea-blackcurrant.png" },
+  { id: "dr-ftea-4", name: "Обліпиховий", description: "Sea buckthorn", price: 55, volume: "420 мл", category: "fruit_tea", image: "/fruit-tea-sea-buckthorn.png" },
+  { id: "dr-ftea-5", name: "Журавлинний", description: "Cranberry", price: 55, volume: "420 мл", category: "fruit_tea", image: "/fruit-tea-cranberry.png" },
 
   // ADDS
   { id: "dr-add-1", name: "Молоко", description: "Milk", price: 5, category: "adds" },
