@@ -7,10 +7,10 @@ import MenuCard from './MenuCard';
 const FeaturedMenu = () => {
   // Select a few items from each category for the featured display
   const featuredItems = [
-    MENU_ITEMS.find(item => item.id === 'c1'), // Капучино
-    MENU_ITEMS.find(item => item.id === 'd1'), // Чізкейк Сан-Себастьян
-    MENU_ITEMS.find(item => item.id === 't1'), // Чай Альпійські трави
-    MENU_ITEMS.find(item => item.id === 'b1'), // Сирники
+    MENU_ITEMS.find(item => item.id === 'dr-cappuccino-1'), // Капучино класичне
+    MENU_ITEMS.find(item => item.id === 'dr-fresh-1'),     // Фреш апельсин
+    MENU_ITEMS.find(item => item.id === 'fd-dessert-1'),   // Сирники
+    MENU_ITEMS.find(item => item.id === 'fd-pasta-1'),     // Равіолі зі шпинатом
   ].filter(Boolean); // Filter out any undefined items if IDs don't match
 
   const containerVariants = {

@@ -22,70 +22,89 @@ export const CAFE_INFO: CafeInfo = {
 
 export const MENU_ITEMS: MenuItem[] = [
   // COFFEE
-  {
-    id: "c1",
-    category: "coffee",
-    name: "Капучино",
-    description: "Класичне поєднання еспресо, збитого молока та густої пінки",
-    price: 65,
-    volume: "250 мл",
-    image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=75&w=600"
-  },
-  {
-    id: "c2",
-    category: "coffee",
-    name: "Флет Вайт",
-    description: "Насичений подвійний шот еспресо з тонким шаром молочної піни",
-    price: 80,
-    volume: "200 мл",
-    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=75&w=600"
-  },
-  {
-    id: "c3",
-    category: "coffee",
-    name: "Латте",
-    description: "М'який кавовий напій з великою кількістю молока",
-    price: 75,
-    volume: "350 мл",
-    image: "https://images.unsplash.com/photo-1536939459926-301728717817?auto=format&fit=crop&q=75&w=600"
-  },
+  { id: "dr-coffee-1", name: "Рістрето", description: "Класичний міцний напій", price: 35, volume: "15 мл", category: "coffee" },
+  { id: "dr-coffee-2", name: "Еспресо", description: "Класична кава", price: 35, volume: "30 мл", category: "coffee" },
+  { id: "dr-coffee-3", name: "Еспресо макіято", description: "Еспресо з краплею молочної піни", price: 40, volume: "50 мл", category: "coffee" },
+  { id: "dr-coffee-4", name: "Допіо", description: "Подвійне еспресо", price: 65, volume: "120 мл", category: "coffee" },
+  { id: "dr-coffee-5", name: "Американо", description: "Класична кава з додаванням води", price: 35, volume: "120 мл", category: "coffee" },
+
+  // CAPPUCCINO
+  { id: "dr-cappuccino-1", name: "Капучино класичне", description: "Класичне поєднання еспресо, молока та піни", price: 45, volume: "220 мл", category: "cappuccino" },
+  { id: "dr-cappuccino-2", name: "Капучино велике", description: "Для тих, хто любить більше кави", price: 50, volume: "320 мл", category: "cappuccino" },
+  { id: "dr-cappuccino-3", name: "Капучино солоне", description: "Капучино з додаванням солі для особливого смаку", price: 50, volume: "220 мл", category: "cappuccino" },
+  { id: "dr-cappuccino-4", name: "Флет уайт", description: "Насичений молочний напій", price: 80, volume: "230 мл", category: "cappuccino" },
+  { id: "dr-cappuccino-5", name: "Апельсинове", description: "Капучино з апельсиновим смаком", price: 55, volume: "220 мл", category: "cappuccino" },
+  { id: "dr-cappuccino-6", name: "Апельсинове XL", description: "Більша порція апельсинової кави", price: 65, volume: "220 мл", category: "cappuccino" },
+
+  // COFFEE WITH MILK
+  { id: "dr-cm-1", name: "Лате", description: "Ніжна кава з великою кількістю молока", price: 50, volume: "320 мл", category: "coffee_with_milk" },
+  { id: "dr-cm-2", name: "Лате XL", description: "Велика порція лате", price: 55, volume: "420 мл", category: "coffee_with_milk" },
+  { id: "dr-cm-3", name: "Глясе", description: "Кава з морозивом", price: 70, volume: "230 мл", category: "coffee_with_milk" },
+  { id: "dr-cm-4", name: "Раф", description: "Ніжний вершковий напій", price: 55, volume: "220 мл", category: "coffee_with_milk" },
+  { id: "dr-cm-5", name: "Раф XL", description: "Великий порція рафу", price: 90, volume: "420 мл", category: "coffee_with_milk" },
+  { id: "dr-cm-6", name: "По-віденськи", description: "Кава з вершками", price: 70, volume: "220 мл", category: "coffee_with_milk" },
+
+  // CHOCOLATE AND COCOA
+  { id: "dr-choc-1", name: "Гарячий чорний шоколад", description: "Dark chocolate", price: 85, volume: "100 мл", category: "chocolate_and_cocoa" },
+  { id: "dr-choc-2", name: "Гарячий молочний шоколад", description: "Milk chocolate", price: 75, volume: "150 мл", category: "chocolate_and_cocoa" },
+  { id: "dr-choc-3", name: "Какао", description: "Cocoa", price: 60, volume: "320 мл", category: "chocolate_and_cocoa" },
+
+  // NON-ALCOHOLIC MULLED WINE
+  { id: "dr-wine-1", name: "Глінтвейн б/а виноград", description: "Grape", price: 70, volume: "300 мл", category: "non_alcoholic_mulled_wine" },
+  { id: "dr-wine-2", name: "Глінтвейн б/а смородина", description: "Currant", price: 70, volume: "300 мл", category: "non_alcoholic_mulled_wine" },
+  { id: "dr-wine-3", name: "Глінтвейн б/а журавлина", description: "Cranberry", price: 70, volume: "300 мл", category: "non_alcoholic_mulled_wine" },
+
+  // FRESH
+  { id: "dr-fresh-1", name: "Фреш апельсин", description: "Orange", price: 80, volume: "220 мл", category: "fresh" },
+  { id: "dr-fresh-2", name: "Фреш гранат", description: "Garnet", price: 150, volume: "220 мл", category: "fresh" },
+  { id: "dr-fresh-3", name: "Фреш грейпфрут", description: "Grapefruit", price: 80, volume: "220 мл", category: "fresh" },
+
+  // FRUIT TEA
+  { id: "dr-ftea-1", name: "Імбирний", description: "Ginger", price: 55, volume: "420 мл", category: "fruit_tea" },
+  { id: "dr-ftea-2", name: "Малиновий", description: "Raspberry", price: 55, volume: "420 мл", category: "fruit_tea" },
+  { id: "dr-ftea-3", name: "Чорна смородина", description: "Blackberry/Currant", price: 55, volume: "420 мл", category: "fruit_tea" },
+  { id: "dr-ftea-4", name: "Обліпиховий", description: "Sea buckthorn", price: 55, volume: "420 мл", category: "fruit_tea" },
+  { id: "dr-ftea-5", name: "Журавлинний", description: "Cranberry", price: 55, volume: "420 мл", category: "fruit_tea" },
+
   // TEA
-  {
-    id: "t1",
-    category: "tea",
-    name: "Чай Альпійські трави",
-    description: "Збір з екологічно чистих трав з медовим післясмаком",
-    price: 55,
-    volume: "400 мл",
-    image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&q=75&w=600"
-  },
+  { id: "dr-tea-1", name: "Чай в кружці", description: "Tea in a mug", price: 30, volume: "240 мл", category: "tea" },
+
+  // ADDS
+  { id: "dr-add-1", name: "Молоко", description: "Milk", price: 5, category: "adds" },
+  { id: "dr-add-2", name: "Вершки", description: "Cream", price: 10, category: "adds" },
+  { id: "dr-add-3", name: "Сироп", description: "Syrup", price: 5, category: "adds" },
+  { id: "dr-add-4", name: "Маршмелоу", description: "Marshmallow", price: 10, category: "adds" },
+  { id: "dr-add-5", name: "Мед", description: "Honey", price: 15, category: "adds" },
+
+  // PASTA AND RAVIOLI
+  { id: "fd-pasta-1", name: "Равіолі з вершковим сиром та шпинатом", description: "шпинат, творог, крем-сир, часник, вершки, пармезан, базилік", price: 150, volume: "380 г", category: "pasta_and_ravioli", image: "/pasta_and_ravioli-1.png" },
+  { id: "fd-pasta-2", name: "Равіолі з лососем", description: "вершковий сир, запечений лосось, томати, пармезан, базилік", price: 195, volume: "350 г", category: "pasta_and_ravioli" },
+  { id: "fd-pasta-3", name: "Равіолі з індичкою та в'яленою грушею", description: "індичка, морква, печериці, цибуля, вершки, пармезан, в'ялена груша", price: 165, volume: "380 г", category: "pasta_and_ravioli" },
+  { id: "fd-pasta-4", name: "Паста карбонара", description: "бекон, вершки, жовток, пармезан, чорний перець", price: 175, volume: "350 г", category: "pasta_and_ravioli" },
+  { id: "fd-pasta-5", name: "Паста з куркою", description: "куряче філе, томати, вершки, пармезан, базилік, оливкова олія", price: 165, volume: "430 г", category: "pasta_and_ravioli" },
+  { id: "fd-pasta-6", name: "Паста з морепродуктами", description: "кальмари, мідії, креветки, томати, часник, пармезан, оливкова олія", price: 240, volume: "400 г", category: "pasta_and_ravioli" },
+
+  // SOUPS
+  { id: "fd-soup-1", name: "Сирний крем-суп", description: "пармезан, чедер, вершки, цибуля, морква", price: 100, volume: "280 г", category: "soups" },
+  { id: "fd-soup-2", name: "Гарбузовий крем-суп", description: "гарбуз, вершки, картопля, сир фета", price: 85, volume: "280 г", category: "soups" },
+
+  // BOWLS
+  { id: "fd-bowl-1", name: "Боул з куркою", description: "кіноа, куряче філе су-від, огірок, томат, мікс салату, фета, оливкова олія", price: 160, volume: "320 г", category: "bowls" },
+  { id: "fd-bowl-2", name: "Боул з лососем", description: "кіноа, лосось, яйце, томат, оливкова олія, сік лимона", price: 185, volume: "300 г", category: "bowls" },
+  { id: "fd-bowl-3", name: "Боул з тунцем", description: "кус-кус, тунець, мікс салату, огірок, томат, яйце, оливкова олія", price: 200, volume: "400 г", category: "bowls" },
+
+  // SALADS
+  { id: "fd-salad-1", name: "Грецький салат", description: "томат, огірок, болгарський перець, оливки, фета, базилік", price: 125, volume: "250 г", category: "salads" },
+  { id: "fd-salad-2", name: "Салат лайт", description: "лист салату, айсберг, томат, мандарин, крем-сир, оливкова олія", price: 100, volume: "250 г", category: "salads" },
+  { id: "fd-salad-3", name: "Цезар з куркою", description: "салат, куряче філе, яйце, пармезан, соус цезар", price: 165, volume: "350 г", category: "salads" },
+
+  // BREAKFASTS
+  { id: "fd-breakfast-1", name: "Яєчня", description: "яйця, огірки, помідори, сир", price: 80, volume: "210 г", category: "breakfasts" },
+  { id: "fd-breakfast-2", name: "Сніданок англійський", description: "яйця, сосиски, квасоля, шпинат, тости, томат", price: 125, volume: "380 г", category: "breakfasts" },
+  { id: "fd-breakfast-3", name: "Скрембл з куркою", description: "яйця, куряче філе, шпинат, томат, тост", price: 135, volume: "300 г", category: "breakfasts" },
+
   // DESSERTS
-  {
-    id: "d1",
-    category: "desserts",
-    name: "Чізкейк Сан-Себастьян",
-    description: "Ніжний запечений десерт з карамельною скоринкою",
-    price: 110,
-    image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=75&w=600"
-  },
-  {
-    id: "d2",
-    category: "desserts",
-    name: "Класичний круасан",
-    description: "Хрустке листкове тісто на вершковому маслі",
-    price: 55,
-    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=75&w=600"
-  },
-  // BREAKFAST
-  {
-    id: "b1",
-    category: "breakfast",
-    name: "Сирники з джемом",
-    description: "Домашні сирники зі сметаною та ягідним соусом",
-    price: 125,
-    volume: "220 г",
-    image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&q=75&w=600"
-  }
+  { id: "fd-dessert-1", name: "Сирники", description: "сирники, сметана/нутелла/фісташка/джем", price: 120, volume: "180 г", category: "desserts" }
 ];
 
 export const REVIEWS: Review[] = [

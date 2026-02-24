@@ -4,7 +4,7 @@ export interface MenuItem {
   description: string;
   price: number;
   volume?: string;
-  category: 'coffee' | 'tea' | 'desserts' | 'breakfast';
+  category: 'coffee' | 'cappuccino' | 'coffee_with_milk' | 'chocolate_and_cocoa' | 'non_alcoholic_mulled_wine' | 'fresh' | 'fruit_tea' | 'tea' | 'adds' | 'pasta_and_ravioli' | 'soups' | 'bowls' | 'salads' | 'breakfasts' | 'desserts';
   image?: string;
 }
 
