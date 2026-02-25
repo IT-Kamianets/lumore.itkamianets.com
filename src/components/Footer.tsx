@@ -29,7 +29,6 @@ const Footer = () => {
             <li><Link to="/" className="hover:text-beige transition-colors">Меню</Link></li>
             <li><Link to="/gallery" className="hover:text-beige transition-colors">Галерея</Link></li>
             <li><Link to="/about" className="hover:text-beige transition-colors">Про нас</Link></li>
-            <li><Link to="/contacts" className="hover:text-beige transition-colors">Контакти</Link></li>
           </ul>
         </div>
 

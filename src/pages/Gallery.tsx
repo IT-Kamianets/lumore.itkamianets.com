@@ -3,22 +3,22 @@ import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 const images = [
-  { src: '/gallery/boul-z-kurkoyu.png', alt: 'Боул з куркою' },
-  { src: '/gallery/boul-z-lososem.png', alt: 'Боул з лососем' },
-  { src: '/gallery/boul-z-tuntsem.png', alt: 'Боул з тунцем' },
-  { src: '/gallery/capuchino.png', alt: 'Капучино' },
-  { src: '/gallery/fresh-grapefruit.png', alt: 'Грейпфрутовий фреш' },
-  { src: '/gallery/harbuzovyy-krem-sup.png', alt: 'Гарбузовий крем-суп' },
-  { src: '/gallery/hretskyy-salat.png', alt: 'Грецький салат' },
-  { src: '/gallery/kartoplya-4-syra.png', alt: 'Картопля 4 сири' },
-  { src: '/gallery/pashot-z-lososem.png', alt: 'Пашот з лососем' },
-  { src: '/gallery/pasta-karbonara.png', alt: 'Паста Карбонара' },
-  { src: '/gallery/ravioli-z-indychkoyu-ta-vyalenoyu-hrusheyu.png', alt: 'Равіолі з індичкою' },
-  { src: '/gallery/syrnyky.png', alt: 'Сирники' },
-  { src: '/gallery/syrnyy-krem-sup.png', alt: 'Сирний крем-суп' },
-  { src: '/gallery/tsezar-z-kurkoyu.png', alt: 'Цезар з куркою' },
-  { src: '/gallery/yayechnya.png', alt: 'Яєчня' },
-  { src: '/gallery/fruit-tea-raspberry.png', alt: 'Малиновий чай' },
+  { src: '/gallery/1.png', alt: 'Фото галереї' },
+  { src: '/gallery/2.png', alt: 'Фото галереї' },
+  { src: '/gallery/3.png', alt: 'Фото галереї' },
+  { src: '/gallery/4.png', alt: 'Фото галереї' },
+  { src: '/gallery/5.png', alt: 'Фото галереї' },
+  { src: '/gallery/6.png', alt: 'Фото галереї' },
+  { src: '/gallery/7.png', alt: 'Фото галереї' },
+  { src: '/gallery/8.png', alt: 'Фото галереї' },
+  { src: '/gallery/9.png', alt: 'Фото галереї' },
+  { src: '/gallery/10.png', alt: 'Фото галереї' },
+  { src: '/gallery/11.png', alt: 'Фото галереї' },
+  { src: '/gallery/12.png', alt: 'Фото галереї' },
+  { src: '/gallery/13.png', alt: 'Фото галереї' },
+  { src: '/gallery/14.png', alt: 'Фото галереї' },
+  { src: '/gallery/15.png', alt: 'Фото галереї' },
+  { src: '/gallery/16.png', alt: 'Фото галереї' },
 ];
 
 const Gallery = () => {
@@ -66,11 +66,6 @@ const Gallery = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-coffee/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-                <p className="text-beige font-medium text-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  {image.alt}
-                </p>
-              </div>
             </motion.div>
           ))}
         </div>

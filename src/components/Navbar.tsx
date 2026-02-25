@@ -17,7 +17,6 @@ const Navbar = () => {
     { label: 'Меню', path: '/' },
     { label: 'Галерея', path: '/gallery' },
     { label: 'Про нас', path: '/about' },
-    { label: 'Контакти', path: '/contacts' },
   ];
 
   const isTransparent = false; // Always false now that Menu is the home page
