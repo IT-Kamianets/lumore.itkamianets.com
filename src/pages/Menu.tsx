@@ -4,6 +4,12 @@ import MenuCard from '../components/MenuCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, SlidersHorizontal, X, Info } from 'lucide-react';
 import type { MenuItem } from '../types';
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 const categories = [
   { id: 'all', label: 'Усе', subcategories: [] },
@@ -12,7 +18,7 @@ const categories = [
   { id: 'kitchen', label: 'Кухня', subcategories: ['pasta_and_ravioli', 'soups', 'bowls', 'salads', 'potato'] },
   { id: 'breakfasts', label: 'Сніданки', subcategories: ['breakfasts'] },
   { id: 'desserts', label: 'Десерти', subcategories: ['desserts'] },
-  { id: 'adds', label: 'Добавки', subcategories: ['adds'] },
+  { id: 'adds', label: 'Додатки', subcategories: ['adds'] },
 ];
 
 const subcategoryLabels: Record<string, string> = {
@@ -31,7 +37,7 @@ const subcategoryLabels: Record<string, string> = {
   potato: 'Картопля',
   breakfasts: 'Сніданки',
   desserts: 'Десерти',
-  adds: 'Добавки до напоїв'
+  adds: 'Додатки до напоїв'
 };
 
 const Menu = () => {
@@ -241,7 +247,10 @@ const Menu = () => {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-2xl bg-beige rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/20"
+              className={cn(
+                "relative w-full bg-beige rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/20",
+                selectedItem.category === 'adds' ? "max-w-md" : "max-w-2xl"
+              )}
             >
               <button 
                 onClick={() => setSelectedItem(null)}
@@ -252,16 +261,18 @@ const Menu = () => {
               
               <div className="flex flex-col md:flex-row h-full max-h-[90vh] overflow-y-auto">
                 {/* Image Section */}
-                <div className="md:w-1/2 aspect-square md:aspect-auto">
-                  <img 
-                    src={selectedItem.image || 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600'} 
-                    alt={selectedItem.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {selectedItem.category !== 'adds' && (
+                  <div className="md:w-1/2 aspect-square md:aspect-auto">
+                    <img 
+                      src={selectedItem.image || 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600'} 
+                      alt={selectedItem.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 
                 {/* Content Section */}
-                <div className="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+                <div className={cn("p-8 md:p-10 flex flex-col justify-center", selectedItem.category === 'adds' ? "w-full" : "md:w-1/2")}>
                   <div className="mb-6">
                     <span className="inline-block px-3 py-1 rounded-full bg-coffee/5 text-coffee/60 text-xs font-bold uppercase tracking-widest mb-4">
                       {subcategoryLabels[selectedItem.category]}
