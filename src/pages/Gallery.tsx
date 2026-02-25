@@ -1,28 +1,40 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 const images = [
-  { src: '/boul-z-kurkoyu.png', alt: 'Боул з куркою' },
-  { src: '/boul-z-lososem.png', alt: 'Боул з лососем' },
-  { src: '/boul-z-tuntsem.png', alt: 'Боул з тунцем' },
-  { src: '/capuchino.png', alt: 'Капучино' },
-  { src: '/fresh-grapefruit.png', alt: 'Грейпфрутовий фреш' },
-  { src: '/harbuzovyy-krem-sup.png', alt: 'Гарбузовий крем-суп' },
-  { src: '/hretskyy-salat.png', alt: 'Грецький салат' },
-  { src: '/kartoplya-4-syra.png', alt: 'Картопля 4 сири' },
-  { src: '/pashot-z-lososem.png', alt: 'Пашот з лососем' },
-  { src: '/pasta-karbonara.png', alt: 'Паста Карбонара' },
-  { src: '/ravioli-z-indychkoyu-ta-vyalenoyu-hrusheyu.png', alt: 'Равіолі з індичкою' },
-  { src: '/syrnyky.png', alt: 'Сирники' },
-  { src: '/syrnyy-krem-sup.png', alt: 'Сирний крем-суп' },
-  { src: '/tsezar-z-kurkoyu.png', alt: 'Цезар з куркою' },
-  { src: '/yayechnya.png', alt: 'Яєчня' },
-  { src: '/fruit-tea-raspberry.png', alt: 'Малиновий чай' },
+  { src: '/gallery/boul-z-kurkoyu.png', alt: 'Боул з куркою' },
+  { src: '/gallery/boul-z-lososem.png', alt: 'Боул з лососем' },
+  { src: '/gallery/boul-z-tuntsem.png', alt: 'Боул з тунцем' },
+  { src: '/gallery/capuchino.png', alt: 'Капучино' },
+  { src: '/gallery/fresh-grapefruit.png', alt: 'Грейпфрутовий фреш' },
+  { src: '/gallery/harbuzovyy-krem-sup.png', alt: 'Гарбузовий крем-суп' },
+  { src: '/gallery/hretskyy-salat.png', alt: 'Грецький салат' },
+  { src: '/gallery/kartoplya-4-syra.png', alt: 'Картопля 4 сири' },
+  { src: '/gallery/pashot-z-lososem.png', alt: 'Пашот з лососем' },
+  { src: '/gallery/pasta-karbonara.png', alt: 'Паста Карбонара' },
+  { src: '/gallery/ravioli-z-indychkoyu-ta-vyalenoyu-hrusheyu.png', alt: 'Равіолі з індичкою' },
+  { src: '/gallery/syrnyky.png', alt: 'Сирники' },
+  { src: '/gallery/syrnyy-krem-sup.png', alt: 'Сирний крем-суп' },
+  { src: '/gallery/tsezar-z-kurkoyu.png', alt: 'Цезар з куркою' },
+  { src: '/gallery/yayechnya.png', alt: 'Яєчня' },
+  { src: '/gallery/fruit-tea-raspberry.png', alt: 'Малиновий чай' },
 ];
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedImage]);
 
   return (
     <div className="pt-24 pb-20 bg-beige min-h-screen">
